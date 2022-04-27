@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url('../img/main_bg.png');
+  background-size: cover;
+  &__video-wrapper {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__video {
+    height: 100%;
+    mask: url('../img/deer.png');
+    mask-position: left center;
+    mask-repeat: no-repeat;
+    mask-size: 45%;
+  }
+  &__content {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+  }
+  .heading-hero {
+    width: max-content;
+    font-family: BebasNeueBook, sans-serif;
+    &__upheader {
+      font-size: 34px;
+      line-height: 34px;
+      margin: 0;
+    }
+    &__header {
+      font-size: 120px;
+      line-height: 80px;
+      margin: 0;
+      color: #5a8a1d;
+      letter-spacing: 0.5em;
+      &::first-letter {
+        font-size: 4em;
+        line-height: 380px
+      }
+    }
+    &__subheader {
+      font-size: 51px;
+      text-align: right;
+    }
+  }
+}

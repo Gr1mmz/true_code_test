@@ -1,0 +1,11 @@
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "vars";
+@import "settings";
+@import "blocks/header";
+@import "blocks/hero";
+
+body {
+  position: relative;
+}
