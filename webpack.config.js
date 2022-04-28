@@ -52,19 +52,19 @@ module.exports = {
       filename: 'index.html',
       minify: isProd
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: `./assets`, to: `./`,
-          noErrorOnMissing: true,
-          force: true
-        },
-        {
-          from: `./favicon.ico`, to: `./`,
-          noErrorOnMissing: true
-        }
-      ],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: `./assets`, to: `./`,
+    //       noErrorOnMissing: true,
+    //       force: true
+    //     },
+    //     {
+    //       from: `./favicon.ico`, to: `./`,
+    //       noErrorOnMissing: true
+    //     }
+    //   ],
+    // }),
     new MiniCssExtractPlugin({filename: `./css/[name].[contenthash].css`})
   ],
   module: {
@@ -116,7 +116,7 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
         type: 'asset/resource'
       },
       {

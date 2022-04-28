@@ -12,6 +12,8 @@ html {
 body {
   background-color: var(--color-white);
   scroll-behavior: smooth;
+  position: relative;
+  max-width: 100vw;
 }
 
 img {
@@ -51,7 +53,8 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
+  position: relative;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
