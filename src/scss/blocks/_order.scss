@@ -2,13 +2,32 @@
   position: relative;
   z-index: 10;
   &__info {
+    position: relative;
     display: inline-block;
     margin-top: 60px;
     float: right;
     padding: 2px 0;
-    border-top: 1px solid #c7af8a;
-    border-bottom: 1px solid #c7af8a;
-    background-blend-mode: lighten ;
+    border-top: 2px solid #c7af8a;
+    border-bottom: 2px solid #c7af8a;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -40px;
+      left: 35%;
+      width: 110px;
+      height: 44px;
+      background: url("../img/order-art.png");
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -40px;
+      left: 35%;
+      width: 110px;
+      height: 44px;
+      background: url("../img/order-art.png");
+      transform: rotate(180deg);
+    }
   }
   &__content {
     display: flex;
