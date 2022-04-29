@@ -10,7 +10,7 @@
         rel="stylesheet">
   <title>Отель-заповедник Лесное</title>
 </head>
-<body>
+  <body>
   <header class="header">
     <nav class="nav-links">
       <a href="#" class="nav-links__item">Об отеле</a>
@@ -27,42 +27,60 @@
           <source src="assets/video.mp4">
         </video>
       </div>
-        <div class="hero__content">
-          <div class="hero__heading heading-hero">
-            <h2 class="heading-hero__upheader">Отель-заповедник</h2>
-            <div class="heading-hero__header">
-              <object data="./img/heading_first-letter.svg" type="image/svg+xml">
-                <img src="./img/heading_first-letter.svg" alt="Л">
-              </object>
-              <object data="./img/heading.svg" type="image/svg+xml">
-                <img src="./img/heading.svg" alt="есное">
-              </object>
-            </div>
-            <div class="heading-hero__subheader subheader">Премиальный отдых в подмосковье</div>
+      <div class="hero__content">
+        <div class="hero__heading heading-hero">
+          <h2 class="heading-hero__upheader">Отель-заповедник</h2>
+          <div class="heading-hero__header">
+            <object data="./img/heading_first-letter.svg" type="image/svg+xml">
+              <img src="./img/heading_first-letter.svg" alt="Л">
+            </object>
+            <object data="./img/heading.svg" type="image/svg+xml">
+              <img src="./img/heading.svg" alt="есное">
+            </object>
           </div>
-          <div class="hero__price price-hero">
-            <div class="price-hero__count">
-              <span>от</span>5 500&#8381<span>в сутки</span>
-            </div>
-            <p class="price-hero__description">
-              4-х разовое питание и all inclusive. Собственное подсобное хозяйство, бассейн, баня, конный двор<br/> и
-              контактный зоопарк
-            </p>
-          </div>
+          <div class="heading-hero__subheader subheader">Премиальный отдых в подмосковье</div>
         </div>
+        <div class="hero__price price-hero">
+          <div class="price-hero__count">
+            <span>от</span>5 500&#8381<span>в сутки</span>
+          </div>
+          <p class="price-hero__description">
+            4-х разовое питание и all inclusive. Собственное подсобное хозяйство, бассейн, баня, конный двор<br/> и
+            контактный зоопарк
+          </p>
+        </div>
+      </div>
       </div>
     </section>
     <section class="order">
       <div class="order__info">
         <div class="order__content">
           <h2 class="order__heading">Бронирование номеров</h2>
-          <input type="date">
-          <input type="date">
+          <div class="order__entry-date">
+            <div class="datepicker-toggle">
+              <span class="datepicker-toggle-button"></span>
+              <input type="date" class="datepicker-input" id="entryDate"/>
+            </div>
+            <div class="datepicker-content">
+              <label for="entryDate">Заезд</label>
+              <span class="datepicker-date">04.03.2019</span>
+            </div>
+          </div>
+          <div class="order__left-date">
+            <div class="datepicker-toggle">
+              <span class="datepicker-toggle-button"></span>
+              <input type="date" class="datepicker-input" id="leftDate"/>
+            </div>
+            <div class="datepicker-content">
+              <label for="entryDate">Выезд</label>
+              <span class="datepicker-date">04.03.2019</span>
+            </div>
+          </div>
           <select name="people" id="people"></select>
           <button class="order__btn">Найти номер</button>
         </div>
       </div>
     </section>
   </main>
-</body>
+  </body>
 </html>
