@@ -1,4 +1,36 @@
 .order {
   position: relative;
   z-index: 10;
+  &__info {
+    display: inline-block;
+    margin-top: 60px;
+    float: right;
+    padding: 2px 0;
+    border-top: 1px solid #c7af8a;
+    border-bottom: 1px solid #c7af8a;
+  }
+  &__content {
+    display: flex;
+    align-items: stretch;
+    width: 1380px;
+    height: 64px;
+    padding: 9px 50px;
+    gap: 25px;
+    background-color: #c7af8a;
+  }
+  &__heading {
+    margin: 0;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: BebasNeueBook, sans-serif;
+  }
+  &__btn {
+    background-color: #fbd407;
+    padding: 0 30px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
 }
