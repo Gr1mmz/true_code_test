@@ -1,5 +1,8 @@
 .header {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: transparent;
   width: 100%;
   padding: 2.5em 1.25em;
@@ -8,6 +11,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
     gap: 4em;
     &__item {
       font-size: 24px;
@@ -15,14 +19,26 @@
       text-transform: uppercase;
       border-radius: 0.5em;
       padding: 0.5em 0.5em 0.4em 0.5em;
-      transition: background-color 0.3s ease-in 0s;
+      transition: background-color 0.3s ease 0s;
       color: #1d1d1b;
       &:hover {
         background-color: #c7af8a;
       }
+      &:not(.nav-links__tel) {
+      @media screen and (max-width: 1023px) {
+        display: none;
+      }
+    }
     }
     &__tel {
       border: 1px solid #c7af8a;
+    }
+  }
+  .burger {
+    @include burger;
+    display: none;
+    @media screen and (max-width: 1023px) {
+      display: block;
     }
   }
 }

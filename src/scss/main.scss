@@ -3,6 +3,7 @@
 @import "vendor";
 @import "vars";
 @import "settings";
+@import "blocks/hamburger-menu";
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/order";
@@ -12,4 +13,9 @@
 body {
   position: relative;
   font-size: 18px;
+  background-color: #fff;
+}
+
+main {
+  background-color: #fff;
 }

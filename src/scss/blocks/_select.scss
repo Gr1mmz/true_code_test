@@ -43,7 +43,7 @@
     position: absolute;
     display: block;
     width: calc(100% + 30px);
-    top: calc(100% + 10px);
+    bottom: calc(100% + 10px);
     left: -16px;
     right: 0;
     background: #fff;
@@ -60,7 +60,7 @@
     position: relative;
     display: block;
     padding: 10px;
-    font-size: 22px;
+    font-size: 16px;
     color: #3b3b3b;
     cursor: pointer;
     transition: all 0.3s ease-in-out 0s;

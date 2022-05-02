@@ -1,6 +1,25 @@
 import '../scss/main.scss';
 import '../index.html';
 
+//HAMBURGER
+
+const hamBtn = document.querySelector('.burger');
+const hamMenu = document.querySelector('.hamburger-menu');
+hamBtn.addEventListener('click', () => {
+  hamMenu.classList.add('active');
+  document.querySelector('body').style.overflow = 'hidden';
+});
+
+hamMenu.addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (e.target.classList.value === 'hamburger-menu__item'
+    || e.target.classList.value === 'hamburger-menu__close'
+    || e.target.classList.value === 'hamburger-menu active') {
+    hamMenu.classList.remove('active');
+    document.querySelector('body').style.overflow = 'auto';
+  }
+})
+
 //ENTRY DATEPICKER
 
 const dateEntryInput = document.querySelector('#entryDate');
