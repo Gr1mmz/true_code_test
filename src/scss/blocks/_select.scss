@@ -1,11 +1,11 @@
 .select {
   position: relative;
   user-select: none;
-  width: 85px;
+  width: max-content;
   border-radius: 3px;
   height: 100%;
   background: #fff;
-  padding: 10px 11px;
+  padding: 10px 15px;
   &__wrapper {
     position: relative;
     display: flex;
@@ -21,10 +21,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
     height: 100%;
-    width: 100%;
     cursor: pointer;
   }
   &__icon {
@@ -44,9 +42,9 @@
   &__options {
     position: absolute;
     display: block;
-    width: calc(100% + 22px);
+    width: calc(100% + 30px);
     top: calc(100% + 10px);
-    left: -11px;
+    left: -16px;
     right: 0;
     background: #fff;
     transition: all 0.3s ease-in-out 0s;
