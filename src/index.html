@@ -69,45 +69,47 @@
         <div class="order__wrapper">
           <div class="order__content">
             <h2 class="order__heading">Бронирование номеров</h2>
-            <div class="order__entry-date">
-              <div class="datepicker-toggle">
-                <span class="datepicker-toggle-button"></span>
-                <input type="date" class="datepicker-input" id="entryDate"/>
+            <div class="order__inputs">
+              <div class="order__entry-date">
+                <div class="datepicker-toggle">
+                  <span class="datepicker-toggle-button"></span>
+                  <input type="date" class="datepicker-input" id="entryDate"/>
+                </div>
+                <div class="datepicker-content">
+                  <label for="entryDate">Заезд</label>
+                  <span class="datepicker-date datepicker__entry-date">04.03.2019</span>
+                </div>
               </div>
-              <div class="datepicker-content">
-                <label for="entryDate">Заезд</label>
-                <span class="datepicker-date datepicker__entry-date">04.03.2019</span>
+              <div class="order__left-date">
+                <div class="datepicker-toggle">
+                  <span class="datepicker-toggle-button"></span>
+                  <input type="date" class="datepicker-input" id="leftDate"/>
+                </div>
+                <div class="datepicker-content">
+                  <label for="entryDate">Выезд</label>
+                  <span class="datepicker-date datepicker__left-date">04.03.2019</span>
+                </div>
               </div>
-            </div>
-            <div class="order__left-date">
-              <div class="datepicker-toggle">
-                <span class="datepicker-toggle-button"></span>
-                <input type="date" class="datepicker-input" id="leftDate"/>
-              </div>
-              <div class="datepicker-content">
-                <label for="entryDate">Выезд</label>
-                <span class="datepicker-date datepicker__left-date">04.03.2019</span>
-              </div>
-            </div>
-            <div class="order__select select">
-              <div class="select__wrapper">
-                <div class="select__trigger">
-                  <div class="select__icon"></div>
-                  <div class="select__text">
-                    <div>Гости</div>
-                    <div class="select__guests">1</div>
+              <div class="order__select select">
+                <div class="select__wrapper">
+                  <div class="select__trigger">
+                    <div class="select__icon"></div>
+                    <div class="select__text">
+                      <div>Гости</div>
+                      <div class="select__guests">1</div>
+                    </div>
+                  </div>
+                  <div class="select__options">
+                    <span class="select__option selected" data-value="1">1</span>
+                    <span class="select__option" data-value="2">2</span>
+                    <span class="select__option" data-value="3">3</span>
+                    <span class="select__option" data-value="4">4</span>
+                    <span class="select__option" data-value="5">5</span>
                   </div>
                 </div>
-                <div class="select__options">
-                  <span class="select__option selected" data-value="1">1</span>
-                  <span class="select__option" data-value="2">2</span>
-                  <span class="select__option" data-value="3">3</span>
-                  <span class="select__option" data-value="4">4</span>
-                  <span class="select__option" data-value="5">5</span>
-                </div>
               </div>
+              <button class="order__btn">Найти номер</button>
             </div>
-            <button class="order__btn">Найти номер</button>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
   width: 100%;
   background: url('../img/main_bg.png');
   background-size: cover;
-  padding-bottom: 2em;
+  padding-bottom: 30px;
   &__video-wrapper {
     position: absolute;
     top: -10px;
@@ -60,6 +60,7 @@
     }
   }
   .heading-hero {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 850px;
@@ -70,12 +71,36 @@
       font-size: 2em;
       line-height: 34px;
       margin: 0 0 0.3em 2.8em;
+      @media screen and (max-width: 1023px) {
+        margin-left: 1.5em;
+      }
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+      }
     }
     &__header {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
       gap: 1em;
+      object {
+        height: 100%;
+        width: auto;
+        &:last-child {
+          height: 40%;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+        height: 250px;
+      }
+      @media screen and (max-width: 767px) {
+        height: 140px;
+        justify-content: flex-start;
+      }
+      @media screen and (max-width: 450px) {
+        height: 90px;
+        justify-content: flex-start;
+      }
     }
     &__subheader {
       font-size: 2.8em;
@@ -83,20 +108,34 @@
       margin-top: 0.5em;
     }
     @media screen and (max-width: 1023px) {
+      width: 720px;
       margin-left: auto;
+      margin-top: 10em;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 0.8em;
     }
   }
   .price-hero {
     position: relative;
-    width: 380px;
+    max-width: 380px;
+    height: max-content;
     padding-left: 2.5em;
     margin-top: 100px;
     margin-left: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
     &__count {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 167px;
+      max-width: 167px;
+      width: auto;
       color: #c7af8a;
       font-weight: 500;
       font-size: 2.5em;
@@ -118,12 +157,19 @@
     &::before {
       position: absolute;
       height: auto;
-      top: 0;
+      top: 50%;
       left: 0;
       content: url('../img/vertical_border.png');
+      transform: translateY(-50%);
     }
     @media screen and (max-width: 1350px) {
       margin-left: auto;
+    }
+    @media screen and (max-width: 1023px) {
+      margin-top: 2.5em;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 1em;
     }
   }
 }
