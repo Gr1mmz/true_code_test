@@ -66,7 +66,7 @@
     width: 850px;
     margin-top: 175px;
     font-family: BebasNeueBook, sans-serif;
-    color: #444;
+    color: var(--color-headers-color);
     &__upheader {
       font-size: 2em;
       line-height: 34px;
@@ -74,7 +74,7 @@
       @media screen and (max-width: 1023px) {
         margin-left: 1.5em;
       }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 768px) {
         margin-left: 0;
       }
     }
@@ -93,12 +93,12 @@
       @media screen and (max-width: 1023px) {
         height: 250px;
       }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 768px) {
         height: 140px;
         justify-content: flex-start;
       }
       @media screen and (max-width: 450px) {
-        height: 90px;
+        height: 85px;
         justify-content: flex-start;
       }
     }
@@ -112,7 +112,7 @@
       margin-left: auto;
       margin-top: 10em;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
     @media screen and (max-width: 450px) {
@@ -136,7 +136,7 @@
       align-items: center;
       max-width: 167px;
       width: auto;
-      color: #c7af8a;
+      color: var(--color-gold);
       font-weight: 500;
       font-size: 2.5em;
       margin-top: 0.25em;
@@ -153,6 +153,7 @@
     &__description {
       line-height: 1.5em;
       margin-bottom: 0;
+      color: var(--color-main-black-lighten);
     }
     &::before {
       position: absolute;

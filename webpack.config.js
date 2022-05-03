@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const {defaultMinimizerOptions} = require('html-loader');
 const TerserPlugin = require('terser-webpack-plugin');
 
@@ -52,19 +51,6 @@ module.exports = {
       filename: 'index.html',
       minify: isProd
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: `./assets`, to: `./`,
-    //       noErrorOnMissing: true,
-    //       force: true
-    //     },
-    //     {
-    //       from: `./favicon.ico`, to: `./`,
-    //       noErrorOnMissing: true
-    //     }
-    //   ],
-    // }),
     new MiniCssExtractPlugin({filename: `./css/[name].[contenthash].css`})
   ],
   module: {
@@ -96,14 +82,7 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [
-                  [
-                    "postcss-preset-env",
-                    {
-                      // Options
-                    },
-                  ],
-                ],
+                plugins: [["postcss-preset-env", {},],],
               },
             },
           },
@@ -116,7 +95,7 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|mp4|webm)$/i,
         type: 'asset/resource'
       },
       {

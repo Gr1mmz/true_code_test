@@ -1,14 +1,14 @@
 .order {
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-white);
   &__info {
     position: relative;
     margin-top: 60px;
     margin-left: auto;
     width: 74%;
     padding: 2px 0;
-    border-top: 2px solid #c7af8a;
-    border-bottom: 2px solid #c7af8a;
+    border-top: 2px solid var(--color-gold);
+    border-bottom: 2px solid var(--color-gold);
     &::before, &::after {
       position: absolute;
       content: "";
@@ -45,7 +45,7 @@
     width: 100%;
     min-height: 64px;
     height: auto;
-    background-color: #c7af8a;
+    background-color: var(--color-gold);
   }
   &__content {
     position: absolute;
@@ -73,6 +73,7 @@
     text-transform: uppercase;
     font-size: 30px;
     font-family: BebasNeueBook, sans-serif;
+    color: var(--color-main-black);
   }
   &__inputs {
     display: flex;
@@ -99,12 +100,12 @@
     display: flex;
     width: 160px;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 10px 15px;
     gap: 10px;
   }
   &__btn {
-    background-color: #fbd407;
+    background-color: var(--color-yellow);
     padding: 0 30px;
     border: none;
     border-radius: 3px;

@@ -2,7 +2,7 @@
   position: relative;
   user-select: none;
   border-radius: 3px;
-  background: #fff;
+  background: var(--color-white);
   padding: 10px 15px;
   &__wrapper {
     position: relative;
@@ -41,16 +41,16 @@
     position: absolute;
     display: block;
     width: calc(100% + 30px);
-    bottom: calc(100% + 10px);
-    left: -16px;
+    top: calc(100% + 10px);
+    left: -15px;
     right: 0;
-    background: #fff;
+    background: var(--color-white);
     transition: all 0.3s ease-in-out 0s;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     z-index: 2;
-    border: 1px solid #aaa;
+    border: 1px solid var(--color-lightgray);
     border-radius: 3px;
   }
   &__option {
@@ -65,10 +65,10 @@
   }
   &__option:hover {
     cursor: pointer;
-    background-color: #b2b2b2;
+    background-color: var(--color-lightgray);
   }
   &__option.selected {
     color: #fff;
-    background-color: #c7af8a;
+    background-color: var(--color-gold);
   }
 }

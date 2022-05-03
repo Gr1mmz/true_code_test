@@ -10,7 +10,6 @@
   &.active {
     opacity: 1;
     z-index: 100;
-    @include stop-scroll;
     .hamburger-menu__sidebar {
       left: 0;
     }
@@ -25,7 +24,7 @@
     font-size: 2em;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 3em 0;
     transition: left 0.5s ease-in-out 0s;
   }
@@ -33,7 +32,7 @@
     padding: 0.5em 0.5em 0.4em 1.5em;
     transition: background-color 0.3s ease 0s;
     &:hover {
-      background-color: #c7af8a;
+      background-color: var(--color-gold);
     }
   }
   &__close {
@@ -44,7 +43,7 @@
     cursor: pointer;
     transition: color 0.3s ease 0s;
     &:hover {
-      color: #c7af8a;
+      color: var(--color-gold);
     }
   }
 }
